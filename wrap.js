@@ -1,12 +1,22 @@
 const wrap = (line, maxLen) => {
-  const lineArray = line.split(' ')
+  let string = line;
   let newString = ""
-  for(let i= 0; i< lineArray.length; i++) {
-    let currEle = lineArray[i]
+
+  let spaceIdx = string.lastIndexOf(' ');
+  if((string.length - spaceIdx) <= maxLen){
+
+      newString += string.slice(spaceIdx);
+
+    }
+      if()
+    }
+
     if(currEle.length > maxLen) {
       return ""
     }
+    else if()
   }
   return newString
 }
 module.exports = wrap;
+
